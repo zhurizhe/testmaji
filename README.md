@@ -1,0 +1,2 @@
+# testmaji
+test for maji
