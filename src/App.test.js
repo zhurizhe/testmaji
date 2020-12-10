@@ -1,8 +1,17 @@
 import { render, screen } from '@testing-library/react';
+import { waitFor } from '@testing-library/dom';
+
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+jest.useFakeTimers()
+
+test('renders learn react link', async () => {
+
+const app= render(<App />);
+//  jest.runAllTimers();
+
+ jest.runTimersToTime(10000);
+const dls =  app.container.innerHTML;
+console.log(dls)
+  
 });

@@ -1,3 +1,16 @@
-
+dl{
+    display: flex;
+    height: 2rem;
+    align-items: center;
+    margin: 0;
+}
+dt{
+    width: 30%;
+    text-align: center;
+}
+dl:nth-child(2n){
+    background-color: #ccc;
+    color: #333;
+}
 
 
